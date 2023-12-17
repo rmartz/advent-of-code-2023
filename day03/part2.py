@@ -23,8 +23,9 @@ def find_neighboring_gears(lines, number):
         min(number.pos_y+2, len(lines))
     )
     
-    x_range = range(max(number.pos_x - 1, 0),
-    min(number.pos_x + len(number.value) + 1, len(lines[0]))
+    x_range = range(
+        max(number.pos_x - 1, 0),
+        min(number.pos_x + len(number.value) + 1, len(lines[0]))
     )
 
     for y in y_range:
